@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="i-navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html ">Courses</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container d-flex mt-5">
+        <div class="col-3 me-3">
+            <input type="text" placeholder="Search" class="form-control" id="searchbar">
+            <h3>Category</h3>
+            <ul id="categories">
+
+            </ul>
+            <h3>Price</h3>
+            <input type="range" class="slider" id="valrange" onchange="price_search()" step="0.1" min="0" max="69.9" value="0">
+            <br><span id="valPrice">0</span> $
+        </div>
+        <div class="col-9 d-flex flex-wrap content" id="div">
+
+        </div>
+    </div>
+    <script src="courses.js"></script>
+    <script src="courses_script.js"></script>
+</body>
+</html>
